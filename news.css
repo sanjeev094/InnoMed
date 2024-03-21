@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
+
+* {
+    color: #d9d9d9;
+}
+
+body {
+    background-color: #238878 !important;
+}
+
+.logo {
+    width:30vh;
+    margin-top: 2vh;
+    margin-left:-10vh;
+}
+
+nav {
+    height: 50px;
+}
+
+nav ul li a {
+    font-family: "poppins", sans-serif;
+    font-size: 2.7vh;
+    color: #d9d9d9 !important;
+}
+
+nav ul li a:hover {
+    font-family: "poppins", sans-serif;
+    font-size: 2.7vh;
+    color: #fdfdfd !important;
+}
+
+nav ul li:active {
+    font-family: "poppins", sans-serif;
+    font-size: 2.7vh;
+    text-shadow: 0px 0px 5px #0000004d !important;
+}
+
+.pro-btn {
+    font-size: 4vh;
+}
+
+.searchbar {
+    margin: 30px 0px ; 
+    margin-left: 62vh;
+    
+    left: 45%;
+    width: 124vh;
+    background-color: #d9d9d9;
+    border-radius: 30px;
+}
+
+.searchbar i {
+    color: #238878;
+    margin-left: 130px;
+}
+
+.fas {
+    font-size: 2vh;
+}
+
+.searchbox {
+    font-size: 2vh;
+    padding-top: 10vh;
+    background-color: #d9d9d9;
+    width: 96vh;
+    height: 5.5vh;
+    border: none;
+    padding: 0px 30px;
+    border-radius: 30px;
+    color: #238878;
+    font-weight: 500;
+    left: 45%;
+    
+    
+}
+
+.card {
+    box-shadow: 0px 1px 15px #0000004d;
+    width: 125vh;
+    
+    left: 30%;
+    background-color: #d9d9d9 !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    border-radius: 17px 17px 10px 10px !important;
+}
+
+.card-body-main {
+    border-radius: 17px 17px 10px 10px;
+    background-color: #78b1a8;
+ 
+    margin: 0px !important;
+    padding: 0px 15px !important;
+}
+
+.card-body {
+    border-radius: 17px 17px 0px 0px;
+    padding: 1rem 0px 0px 0px !important;
+    border: none;
+    height: 70vh;
+}
+
+.card-title {
+    color: #238878;
+    font-weight: 550;
+    padding-left: 1.5rem !important;
+    font-family: "poppins", sans-serif;
+    font-size: medium;
+}
+
+.scrollbar-container::-webkit-scrollbar {
+    width: 5px;
+    /* Width of the scrollbar */
+}
+
+.scrollbar-container::-webkit-scrollbar-track {
+    background: transparent;
+    /* Background color of the scrollbar track */
+}
+
+.scrollbar-container::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded corners for the thumb */
+}
+
+.scrollbar-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the scrollbar thumb on hover */
+}
+
+.main.body {
+    display: flex; /* Use flexbox to make the sections appear inline */
+}
+
+.left.side {
+    float: left; /* Float the left side to make it appear on the left */
+}
+
+.right.side {
+    float: right; /* Float the right side to make it appear on the right */
+}
+
+/* Add additional styling for the sections as needed */
+.left.side,
+.right.side {
+    box-sizing: border-box;
+}
+
+.sidemenu {
+    font-family: "poppins", sans-serif;
+    align-items: center;
+    font-size: small;
+    font-weight: 550;
+}
+
+.block{
+    background-color:#d9d9d9;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    box-shadow: 0px 2px 0px #0000004d;
+    transition: 0s ease-in-out 3s;
+}
+
+.block1{
+    border-radius: 0px 0px 15px 0px;
+    box-shadow: 3px 2px px #0000004d;
+
+}
+
+.selected {
+    width:22vh; /* Width of active block */
+    background-color: #78b1a8; /* Active block color */
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 0px 0px 5px #0000004d;
+}
+
+.sidemenu .block .fas{
+    color: #238878;
+    font-size: 2.5vh;
+    padding: 15px;
+}
+
+.sidemenu .selected .fas{
+    color: #d9d9d9;
+}
+
+.calendar {
+    box-shadow: 0px 0px 15px #0000004d;
+    font-family: "poppins", sans-serif;
+    width: 26vh;
+    height: 38vh;
+    border-radius:  0px 15px 15px 0px;
+    overflow: hidden;
+    position: relative; /* Add position relative */
+}
+.monthyear {
+    background-color: #78b1a8;
+    text-align: center;
+    padding: 2vh 0;
+}
+.days {
+    background-color: #d9d9d9;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-size: 70%;
+    position: relative; /* Add position relative */
+}
+.day {
+    color: #238878;
+    padding: 9.7px 0;
+    border-bottom: 1px solid #ccc;
+    position: relative; /* Add position relative */
+}
+.current-day {
+    color:#d9d9d9;
+    border: 2px solid #238878;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footermain {
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0px 0px 15px #0000004d;
+    background-color:#d9d9d9;
+    padding-top: 15px;
+    color: #d9d9d9;
+}
+
+footer {
+    border-radius: 15px 15px 0px 0px;
+    background-color: #d9d9d9;
+    color: #d9d9d9;
+    padding: 20px 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-logo img {
+    height: 50px; /* Adjust height as needed */
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+.footer-links ul li a {
+    font-weight: 480;
+    color: #238878;
+    text-decoration: none;
+}
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-social ul li {
+    display: inline;
+    margin-right: 10px;
+}
+.footer-social ul li:last-child {
+    margin-right: 0;
+}
+.footer-social ul li a {
+    color: #238878;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+footer ul li a .fa-brands{
+    box-shadow: 0px 0px 5px #555;
+    text-shadow: 0px 0px 5px #555;
+}
+
+.mb-4 {
+    height: 70vh;
+}
+
+
+    
+
+
+.bottombox {
+    display: flex;
+    gap: 46px;
+
+}
+p {
+    color: #238878;
+}
+
+.footer-links {
+    margin-left: 80px;
+}
+
+.feed {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px auto 0px auto;
+    max-width: 1200px;m
+}
+
+.feed article {
+    width: calc(33.333% - 10px);
+    margin-bottom : 1rem;
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feed article header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    color: #238878;
+}
+
+.feed article header img {
+    width: 170px;
+    height: 130px;
+    border-radius: 10%;
+    object-fit: cover;
+   margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    
+}
+
+.feed article header h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.feed article p {
+    padding: 1rem;
+    font-size
+}
+
+
+.newslines {
+    text-decoration:none;
+    color:#238878;
+}
